@@ -2,12 +2,14 @@
 
 import { useCallback, useEffect, useRef } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 type NavProps = {
   onNewsletterOpen: () => void;
 };
 
 export default function Nav({ onNewsletterOpen }: NavProps) {
+  const pathname = usePathname();
   const navRef = useRef<HTMLElement>(null);
   const menuOpen = useRef(false);
 
@@ -18,6 +20,24 @@ export default function Nav({ onNewsletterOpen }: NavProps) {
     toggle?.setAttribute("aria-expanded", "false");
     toggle?.setAttribute("aria-label", "Open menu");
   }, []);
+
+  const scrollToContactForm = useCallback(() => {
+    const form = document.getElementById("contact-form");
+    if (!form) return;
+    form.scrollIntoView({ behavior: "smooth", block: "start" });
+    window.history.replaceState(null, "", "/contact#contact-form");
+  }, []);
+
+  const handleContactClick = useCallback(
+    (e: React.MouseEvent<HTMLAnchorElement>) => {
+      closeMenu();
+      if (pathname === "/contact") {
+        e.preventDefault();
+        scrollToContactForm();
+      }
+    },
+    [pathname, scrollToContactForm, closeMenu],
+  );
 
   const toggleMenu = useCallback(() => {
     const nav = navRef.current;
@@ -87,7 +107,7 @@ export default function Nav({ onNewsletterOpen }: NavProps) {
           <Link href="/insights" onClick={closeMenu}>
             Insights
           </Link>
-          <Link href="/contact#contact-form" onClick={closeMenu}>
+          <Link href="/contact#contact-form" onClick={handleContactClick}>
             Contact
           </Link>
           <button
