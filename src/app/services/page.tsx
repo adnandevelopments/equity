@@ -33,8 +33,8 @@ export default function ServicesPage() {
           </h1>
           <p className="reveal delay-2">
             Investor relations, AI-powered investor acquisition, digital
-            investor awareness, capital markets advisory, and market intelligence
-            for public and growth-stage companies.
+            investor awareness, capital markets advisory, and market
+            intelligence for public and growth-stage companies.
           </p>
         </div>
       </header>
@@ -48,7 +48,8 @@ export default function ServicesPage() {
               Strong companies can still be overlooked when investors do not
               understand the story. We combine capital markets expertise,
               investor communications, digital targeting, and AI-supported
-              intelligence to make the opportunity easier to discover and follow.
+              intelligence to make the opportunity easier to discover and
+              follow.
             </p>
           </div>
           <figure className="feature-image compact">
@@ -100,7 +101,21 @@ export default function ServicesPage() {
                 <li>Investor lead generation</li>
                 <li>Investor database development</li>
                 <li>Investor journey optimization</li>
+                <li>Qualified investor email databases</li>
+                <li>
+                  Proprietary, licensed, publisher, and client-owned investor
+                  audiences
+                </li>
+                <li>Permission-based investor email marketing</li>
+                <li>Campaign-generated investor leads</li>
+                <li>Investor database ownership and data-access policies</li>
+                <li>Email engagement tracking and follow-up campaigns</li>
               </ul>
+              <p style={{ marginTop: 16 }}>
+                <Link href="/investor-awareness">
+                  Learn more about investor email marketing →
+                </Link>
+              </p>
             </article>
 
             <article className="card">
@@ -129,13 +144,25 @@ export default function ServicesPage() {
                 <li>Google Search and Display</li>
                 <li>YouTube and LinkedIn</li>
                 <li>X / Twitter and StockTwits</li>
-                <li>
-                  Seeking Alpha, Benzinga, Yahoo Finance, and MarketWatch
-                </li>
+                <li>Seeking Alpha, Benzinga, Yahoo Finance, and MarketWatch</li>
                 <li>
                   InvestorHub, financial newsletters, and investment podcasts
                 </li>
+                <li>Facebook investor advertising</li>
+                <li>Instagram investor advertising</li>
+                <li>Financial influencer campaigns</li>
+                <li>Investor media and podcast promotion</li>
+                <li>Paid social media management</li>
+                <li>Website and video-viewer retargeting</li>
+                <li>Ongoing campaign monitoring and optimization</li>
+                <li>A/B testing and budget reallocation</li>
+                <li>Weekly and monthly performance reporting</li>
               </ul>
+              <p style={{ marginTop: 16 }}>
+                <Link href="/investor-awareness">
+                  View full campaign capabilities →
+                </Link>
+              </p>
             </article>
 
             <article className="card">

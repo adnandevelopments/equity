@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SiteShell from "@/components/SiteShell";
+import { COMPANY } from "@/lib/company";
 
 export default function Home() {
   return (
@@ -10,9 +11,7 @@ export default function Home() {
             <div className="eyebrow reveal">
               Investor awareness and growth advisory
             </div>
-            <h1 className="reveal delay-1">
-              Helping Public Companies Reach Investors Since 1999
-            </h1>
+            <h1 className="reveal delay-1">{COMPANY.heroHeadline}</h1>
             <p className="reveal delay-2">
               Capital markets expertise. AI-powered investor growth. Equity
               Alliance helps OTCQB, OTCQX, Nasdaq, and growth-stage public
@@ -20,7 +19,7 @@ export default function Home() {
               shareholder engagement, and access capital.
             </p>
             <p className="reveal delay-2" style={{ marginTop: 16 }}>
-              For more than 25 years, we have worked at the intersection of
+              {COMPANY.yearsCopy}
               capital markets, investor communications, digital marketing, and
               investor acquisition — helping quality companies get discovered
               by investors worldwide.
@@ -47,7 +46,7 @@ export default function Home() {
                 alt="Executives overlooking a city skyline"
               />
               <figcaption>
-                <span>Established 1999</span>
+                <span>{COMPANY.establishedLabel}</span>
                 <strong>
                   Capital markets expertise, AI-powered investor acquisition,
                   and market visibility.
@@ -56,11 +55,8 @@ export default function Home() {
             </figure>
             <div className="hero-proof">
               <div>
-                <b>25+</b>
-                <span>
-                  Years around capital markets, investor relations, and growth
-                  campaigns
-                </span>
+                <b>{COMPANY.proofYearsLabel}</b>
+                <span>{COMPANY.proofYearsDescription}</span>
               </div>
               <div>
                 <b>IR</b>
@@ -84,7 +80,7 @@ export default function Home() {
             </div>
             <p className="lead">
               Most public companies face the same challenge: the market does not
-              fully understand their story. Since 1999, Equity Alliance has
+              fully understand their story. {COMPANY.sinceYearLabel}, Equity Alliance has
               helped companies increase visibility, communicate their
               investment thesis, attract investors, and access capital.
             </p>

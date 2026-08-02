@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import SiteShell from "@/components/SiteShell";
+import { COMPANY } from "@/lib/company";
 
 export const metadata: Metadata = {
   title: "Contact Equity Alliance",
@@ -49,19 +50,13 @@ export default function ContactPage() {
               <br />
               United States&nbsp;&nbsp;
               <a
-                href="tel:+12125402727"
+                href={COMPANY.usPhoneHref}
                 style={{ fontWeight: 850, color: "#1648df" }}
               >
-                +1 212 540 2727
+                {COMPANY.usPhone}
               </a>
               <br />
-              South Africa&nbsp;&nbsp;
-              <a
-                href="tel:+27637771232"
-                style={{ fontWeight: 850, color: "#1648df" }}
-              >
-                +27 63 777 1232
-              </a>
+              Canada&nbsp;&nbsp;{COMPANY.canadaLocation}
             </p>
             <p className="notice">
               Submissions are saved securely for follow-up. Equity Alliance does

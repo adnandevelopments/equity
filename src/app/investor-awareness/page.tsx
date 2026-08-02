@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteShell from "@/components/SiteShell";
+import CampaignMarketingSections from "@/components/investor-awareness/CampaignMarketingSections";
+import { COMPANY } from "@/lib/company";
 
 export const metadata: Metadata = {
-  title: "Investor Awareness AI™ — Equity Alliance",
+  title: "Investor Awareness & Capital Markets Marketing — Equity Alliance",
   description:
-    "Investor awareness campaigns for public companies: AI visibility, targeted traffic, investor storytelling, landing pages, and measurable engagement.",
+    "Multi-platform investor awareness campaigns for public companies: Facebook, Instagram, email marketing, financial influencers, retargeting, analytics, and ongoing campaign management.",
   openGraph: {
     title: "Investor Awareness AI™ — Equity Alliance",
     description:
@@ -59,7 +61,7 @@ export default function InvestorAwarenessPage() {
                 alt="Financial market data displays representing investor visibility and ticker awareness"
               />
               <figcaption>
-                <span>Founded 1999</span>
+                <span>{COMPANY.foundedLabel}</span>
                 <strong>
                   Investor awareness, AI visibility, and market impact for
                   public companies.
@@ -68,7 +70,7 @@ export default function InvestorAwarenessPage() {
             </figure>
             <div className="hero-proof">
               <div>
-                <b>1999</b>
+                <b>{COMPANY.establishedYear}</b>
                 <span>Working with public-company management</span>
               </div>
               <div>
@@ -92,7 +94,7 @@ export default function InvestorAwarenessPage() {
               <h2>Visibility, not capability.</h2>
             </div>
             <p className="lead">
-              Founded in 1999, Equity Alliance works directly with
+              {COMPANY.foundedLabel}, Equity Alliance works directly with
               public-company CEOs and management teams to develop tailored
               investor awareness campaigns based on each company&apos;s goals,
               story, market position, timing, and budget.
@@ -126,6 +128,8 @@ export default function InvestorAwarenessPage() {
           </div>
         </div>
       </section>
+
+      <CampaignMarketingSections />
 
       <section className="image-story">
         <div className="wrap image-story-grid">
@@ -191,11 +195,15 @@ export default function InvestorAwarenessPage() {
               <li>Google Display Network</li>
               <li>YouTube campaigns</li>
               <li>LinkedIn investor targeting</li>
+              <li>Facebook investor advertising</li>
+              <li>Instagram investor advertising</li>
               <li>X / Twitter, StockTwits, and InvestorHub visibility</li>
               <li>
                 Seeking Alpha, Benzinga, Yahoo Finance, and MarketWatch
                 visibility
               </li>
+              <li>Financial influencer promotion</li>
+              <li>Investor podcast and newsletter promotion</li>
               <li>Ticker-symbol targeted advertising</li>
               <li>Dedicated investor landing pages</li>
               <li>Display advertising on investor websites</li>
@@ -205,9 +213,15 @@ export default function InvestorAwarenessPage() {
               <li>Financial media placement</li>
               <li>Sponsored content</li>
               <li>Press distribution</li>
+              <li>Qualified investor email database access</li>
+              <li>Permission-based investor email marketing</li>
+              <li>Campaign-generated investor leads</li>
               <li>Investor database building</li>
               <li>Email marketing</li>
               <li>Retargeting campaigns</li>
+              <li>Continuous campaign monitoring</li>
+              <li>A/B testing and media optimization</li>
+              <li>Weekly campaign reporting</li>
               <li>Analytics & reporting</li>
             </ul>
           </article>
@@ -267,7 +281,9 @@ export default function InvestorAwarenessPage() {
             <article className="who-card">
               <div className="number">06</div>
               <h3>Why investors should pay attention</h3>
-              <p>A clear, compelling reason to follow the story going forward.</p>
+              <p>
+                A clear, compelling reason to follow the story going forward.
+              </p>
             </article>
           </div>
         </div>
@@ -345,9 +361,9 @@ export default function InvestorAwarenessPage() {
             <article className="card">
               <h3>Content, Video & Thought Leadership</h3>
               <p>
-                Position management and the company as credible industry
-                leaders so investors understand the company, remember the
-                story, and follow future developments:
+                Position management and the company as credible industry leaders
+                so investors understand the company, remember the story, and
+                follow future developments:
               </p>
               <ul>
                 <li>CEO interviews</li>
@@ -380,12 +396,20 @@ export default function InvestorAwarenessPage() {
           </div>
           <div className="industries">
             <span className="pill">Retail investors</span>
+            <span className="pill">Accredited investors</span>
+            <span className="pill">High-net-worth investors</span>
+            <span className="pill">Active traders</span>
             <span className="pill">Institutional investors</span>
             <span className="pill">Family offices</span>
             <span className="pill">Wealth managers</span>
-            <span className="pill">Financial advisors</span>
+            <span className="pill">Financial advisers</span>
+            <span className="pill">Registered investment advisers</span>
             <span className="pill">Portfolio managers</span>
             <span className="pill">Small-cap funds</span>
+            <span className="pill">Investor newsletter subscribers</span>
+            <span className="pill">Financial influencer audiences</span>
+            <span className="pill">Investment podcast audiences</span>
+            <span className="pill">Sector-specific retail investor communities</span>
             <span className="pill">Analysts</span>
             <span className="pill">Financial journalists</span>
             <span className="pill">Investor influencers</span>
@@ -464,16 +488,23 @@ export default function InvestorAwarenessPage() {
               audience, and create measurable investor engagement.
             </p>
             <div className="industries" style={{ marginTop: 22 }}>
-              <span className="pill">Founded in 1999</span>
+              <span className="pill">{COMPANY.foundedLabel}</span>
               <span className="pill">Public-company experience</span>
+              <span className="pill">Facebook and Instagram expertise</span>
+              <span className="pill">Qualified investor audiences</span>
+              <span className="pill">Financial influencer relationships</span>
+              <span className="pill">Multi-platform execution</span>
+              <span className="pill">Active campaign monitoring</span>
+              <span className="pill">Transparent reporting</span>
+              <span className="pill">Compliance-conscious practices</span>
+              <span className="pill">One coordinated campaign team</span>
               <span className="pill">Direct CEO involvement</span>
               <span className="pill">Strategy-first approach</span>
-              <span className="pill">Customized campaigns</span>
               <span className="pill">Investor-focused storytelling</span>
-              <span className="pill">AI & digital visibility</span>
-              <span className="pill">Transparent campaign planning</span>
-              <span className="pill">Analytics & reporting</span>
             </div>
+            <p style={{ marginTop: 20 }}>
+              <Link href="/services">View all services →</Link>
+            </p>
           </article>
         </div>
       </section>
@@ -482,19 +513,20 @@ export default function InvestorAwarenessPage() {
         <div className="wrap">
           <div className="cta">
             <div>
-              <h2>Investor Awareness. AI Visibility. Market Impact.</h2>
+              <h2>Request a Customized Proposal</h2>
               <p>
-                If your company has a strong story but needs greater investor
-                visibility, Equity Alliance can help develop a tailored Investor
-                Awareness Campaign aligned with your goals and budget. Speak
-                directly with Dean Lynch, CEO of Equity Alliance, to discuss
-                your visibility challenges and whether a customized campaign is
-                the right fit.
+                Contact Equity Alliance to request a customized investor
+                awareness proposal covering Facebook and Instagram campaigns,
+                financial influencer promotion, qualified investor email
+                marketing, financial publisher exposure, press-release
+                amplification, Google and digital advertising, audience
+                retargeting, content creation, ongoing campaign optimization,
+                and reporting and analytics.
               </p>
             </div>
             <div style={{ textAlign: "right" }}>
               <Link className="btn" href="/contact">
-                Schedule a Confidential Consultation →
+                Request a Proposal →
               </Link>
             </div>
           </div>

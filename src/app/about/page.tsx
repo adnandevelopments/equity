@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import SiteShell from "@/components/SiteShell";
+import { COMPANY } from "@/lib/company";
 
 export const metadata: Metadata = {
   title: "About Equity Alliance",
@@ -63,7 +64,7 @@ export default function AboutPage() {
               remain undervalued if investors never discover them.
             </p>
             <p>
-              Since 1999, Equity Alliance has helped public and private
+              {COMPANY.sinceYearLabel}, Equity Alliance has helped public and private
               companies increase visibility, communicate their investment
               thesis, attract investors, and access capital.
             </p>
