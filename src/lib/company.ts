@@ -9,7 +9,6 @@ export const COMPANY = {
   proofYearsLabel: "8+",
   proofYearsDescription:
     "Years around capital markets, investor relations, and growth campaigns",
-  usPhone: "+1 212 540 2727",
-  usPhoneHref: "tel:+12125402727",
-  canadaLocation: "Toronto, Canada",
+  phone: "+1 212 540 2727",
+  phoneHref: "tel:+12125402727",
 } as const;

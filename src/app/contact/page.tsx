@@ -48,15 +48,13 @@ export default function ContactPage() {
             <p style={{ margin: "0 0 16px", lineHeight: 1.85 }}>
               <strong>Speak with our team</strong>
               <br />
-              United States&nbsp;&nbsp;
+              Canada&nbsp;&nbsp;
               <a
-                href={COMPANY.usPhoneHref}
+                href={COMPANY.phoneHref}
                 style={{ fontWeight: 850, color: "#1648df" }}
               >
-                {COMPANY.usPhone}
+                {COMPANY.phone}
               </a>
-              <br />
-              Canada&nbsp;&nbsp;{COMPANY.canadaLocation}
             </p>
             <p className="notice">
               Submissions are saved securely for follow-up. Equity Alliance does
