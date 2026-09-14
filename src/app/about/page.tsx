@@ -1,23 +1,23 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import SiteShell from "@/components/SiteShell";
 import { COMPANY } from "@/lib/company";
 
 export const metadata: Metadata = {
-  title: "About Equity Alliance",
+  title: "About Vizio Marketing",
   description:
-    "Equity Alliance provides investor awareness, marketing, business development, and investor relations support for OTCQB, OTCQX, Nasdaq, and growth-stage public companies.",
+    "Vizio Marketing provides investor awareness, marketing, business development, and investor relations support for OTCQB, OTCQX, Nasdaq, and growth-stage public companies.",
   openGraph: {
-    title: "About Equity Alliance",
+    title: "About Vizio Marketing",
     description:
-      "Equity Alliance provides investor awareness, marketing, business development, and investor relations support for OTCQB, OTCQX, Nasdaq, and growth-stage public companies.",
+      "Vizio Marketing provides investor awareness, marketing, business development, and investor relations support for OTCQB, OTCQX, Nasdaq, and growth-stage public companies.",
     url: "https://equityalliancevc.com/about",
     images: ["/assets/advisory-meeting.webp"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Equity Alliance",
+    title: "About Vizio Marketing",
     description:
-      "Equity Alliance provides investor awareness, marketing, business development, and investor relations support for OTCQB, OTCQX, Nasdaq, and growth-stage public companies.",
+      "Vizio Marketing provides investor awareness, marketing, business development, and investor relations support for OTCQB, OTCQX, Nasdaq, and growth-stage public companies.",
     images: ["/assets/advisory-meeting.webp"],
   },
 };
@@ -27,12 +27,12 @@ export default function AboutPage() {
     <SiteShell>
       <header className="page-hero">
         <div className="wrap">
-          <div className="eyebrow reveal">About Equity Alliance</div>
+          <div className="eyebrow reveal">About Vizio Marketing</div>
           <h1 className="reveal delay-1">
             Capital Markets Expertise. AI-Powered Investor Growth.
           </h1>
           <p className="reveal delay-2">
-            Equity Alliance helps OTCQB, OTCQX, Nasdaq, and growth-stage public
+            Vizio Marketing helps OTCQB, OTCQX, Nasdaq, and growth-stage public
             companies increase market awareness, attract investors, improve
             shareholder engagement, and access capital.
           </p>
@@ -64,7 +64,7 @@ export default function AboutPage() {
               remain undervalued if investors never discover them.
             </p>
             <p>
-              {COMPANY.sinceYearLabel}, Equity Alliance has helped public and private
+              {COMPANY.sinceYearLabel}, Vizio Marketing has helped public and private
               companies increase visibility, communicate their investment
               thesis, attract investors, and access capital.
             </p>
@@ -87,7 +87,7 @@ export default function AboutPage() {
               <h2>Principles for credible investor awareness.</h2>
             </div>
             <p className="lead">
-              Equity Alliance combines capital markets expertise, investor
+              Vizio Marketing combines capital markets expertise, investor
               relations, digital marketing, AI-powered intelligence, and global
               investor reach in one focused advisory model.
             </p>

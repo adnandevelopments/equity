@@ -1,4 +1,4 @@
-export type InsightArticleMeta = {
+﻿export type InsightArticleMeta = {
   slug: string;
   tag: string;
   title: string;
@@ -17,9 +17,9 @@ export const insightArticles: InsightArticleMeta[] = [
       "Growth creates value, but awareness accelerates recognition. Why high-growth companies need investor awareness to help the market understand their opportunity.",
     date: "22 June 2026",
     metaTitle:
-      "The Next Great Growth Stock Won't Be Discovered By Accident — Equity Alliance",
+      "The Next Great Growth Stock Won't Be Discovered By Accident — Vizio Marketing",
     metaDescription:
-      "Growth creates value, but awareness accelerates recognition. Equity Alliance explains why investor awareness matters for growth companies seeking market recognition.",
+      "Growth creates value, but awareness accelerates recognition. Vizio Marketing explains why investor awareness matters for growth companies seeking market recognition.",
   },
   {
     slug: "investor-relations-best-practices",
@@ -29,7 +29,7 @@ export const insightArticles: InsightArticleMeta[] = [
     description:
       "Practical guidance for clearer stakeholder communication, stronger investor materials, and fewer unanswered questions around the company story.",
     date: "25 May 2026",
-    metaTitle: "Investor Relations Best Practices — Equity Alliance",
+    metaTitle: "Investor Relations Best Practices — Vizio Marketing",
     metaDescription:
       "Practical investor relations guidance for public and growth companies that want clearer stakeholder communication and stronger market understanding.",
   },
@@ -40,7 +40,7 @@ export const insightArticles: InsightArticleMeta[] = [
     description:
       "Trust is built through consistency, transparency, and clarity. For public and growth companies, confidence comes from doing the basics well over time.",
     date: "20 April 2026",
-    metaTitle: "Building Stakeholder Confidence — Equity Alliance",
+    metaTitle: "Building Stakeholder Confidence — Vizio Marketing",
     metaDescription:
       "How public and growth companies can build stakeholder confidence through consistent communication, transparent milestones, and clearer market messaging.",
   },
@@ -51,7 +51,7 @@ export const insightArticles: InsightArticleMeta[] = [
     description:
       "Cross-border business development works best when companies adapt the story, proof points, and stakeholder communication to each market.",
     date: "23 March 2026",
-    metaTitle: "International Growth — Equity Alliance",
+    metaTitle: "International Growth — Vizio Marketing",
     metaDescription:
       "Practical guidance on market positioning for companies pursuing cross-border business development, investor visibility, and international stakeholder engagement.",
   },

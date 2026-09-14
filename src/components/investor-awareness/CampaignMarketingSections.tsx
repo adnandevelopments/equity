@@ -1,4 +1,4 @@
-function ServiceCard({
+﻿function ServiceCard({
   title,
   intro,
   items,
@@ -36,7 +36,7 @@ export default function CampaignMarketingSections() {
               </h2>
             </div>
             <p className="lead">
-              Equity Alliance develops multi-platform investor awareness
+              Vizio Marketing develops multi-platform investor awareness
               campaigns for public companies seeking greater market visibility,
               stronger investor engagement, and broader recognition across the
               financial community.
@@ -71,7 +71,7 @@ export default function CampaignMarketingSections() {
           <div className="two-grid">
             <ServiceCard
               title="Facebook and Instagram Investor Marketing"
-              intro="Equity Alliance develops and manages targeted Facebook and Instagram campaigns designed specifically for public-company and investor audiences."
+              intro="Vizio Marketing develops and manages targeted Facebook and Instagram campaigns designed specifically for public-company and investor audiences."
               items={[
                 "Paid Facebook and Instagram campaigns",
                 "Organic investor-focused social content",
@@ -88,7 +88,7 @@ export default function CampaignMarketingSections() {
 
             <ServiceCard
               title="Financial Influencer and Investor Media Promotion"
-              intro="Equity Alliance coordinates campaigns with financial influencers, investor commentators, and investor-focused media channels."
+              intro="Vizio Marketing coordinates campaigns with financial influencers, investor commentators, and investor-focused media channels."
               items={[
                 "Financial influencers",
                 "YouTube investment channels",
@@ -109,7 +109,7 @@ export default function CampaignMarketingSections() {
           <div className="two-grid">
             <ServiceCard
               title="Ongoing Campaign Monitoring and Optimization"
-              intro="Investor awareness campaigns require active management after launch. Equity Alliance monitors performance and adjusts strategy based on audience response, advertising efficiency, website traffic, email engagement, and publisher results."
+              intro="Investor awareness campaigns require active management after launch. Vizio Marketing monitors performance and adjusts strategy based on audience response, advertising efficiency, website traffic, email engagement, and publisher results."
               items={[
                 "Ongoing performance monitoring",
                 "Audience-targeting adjustments",
@@ -159,7 +159,7 @@ export default function CampaignMarketingSections() {
               <h2>Qualified Investor Email Marketing and Database Access</h2>
             </div>
             <p className="lead">
-              Equity Alliance provides targeted investor email marketing through
+              Vizio Marketing provides targeted investor email marketing through
               proprietary audiences, licensed databases, publisher networks,
               opt-in investor communities, client-owned databases, and
               campaign-generated leads.
@@ -219,11 +219,11 @@ export default function CampaignMarketingSections() {
           <div className="panel who" style={{ marginBottom: 28 }}>
             <article className="who-card">
               <div className="number">01</div>
-              <h3>Equity Alliance-Owned Audiences</h3>
+              <h3>Vizio Marketing-Owned Audiences</h3>
               <p>
-                Certain investor audiences are maintained directly by Equity
-                Alliance or affiliated platforms. These contacts are accessed
-                under Equity Alliance&apos;s data policies and consent
+                Certain investor audiences are maintained directly by Vizio
+                Marketing or affiliated platforms. These contacts are accessed
+                under Vizio Marketing&apos;s data policies and consent
                 frameworks.
               </p>
             </article>
@@ -241,7 +241,7 @@ export default function CampaignMarketingSections() {
               <h3>Client-Owned Audiences</h3>
               <p>
                 Client-supplied shareholder, conference, inquiry, or newsletter
-                databases remain the property of the client. Equity Alliance
+                databases remain the property of the client. Vizio Marketing
                 manages campaigns on the client&apos;s behalf without claiming
                 ownership of the underlying data.
               </p>
@@ -317,7 +317,7 @@ export default function CampaignMarketingSections() {
                 maxWidth: 820,
               }}
             >
-              Equity Alliance combines Facebook, Instagram, LinkedIn, X,
+              Vizio Marketing combines Facebook, Instagram, LinkedIn, X,
               YouTube, Google, financial publishers, investor communities, email
               marketing, sponsored content, influencer promotion, and
               retargeting into one coordinated campaign.
@@ -357,8 +357,8 @@ export default function CampaignMarketingSections() {
         <div className="wrap">
           <div className="section-head">
             <div>
-              <div className="kicker">Why Equity Alliance</div>
-              <h2>Why public companies choose Equity Alliance.</h2>
+              <div className="kicker">Why Vizio Marketing</div>
+              <h2>Why public companies choose Vizio Marketing.</h2>
             </div>
           </div>
           <div className="panel who">
@@ -431,7 +431,7 @@ export default function CampaignMarketingSections() {
             <strong>Compliance statement.</strong> All campaign content is
             based on approved public information. Clients approve material
             before publication. Compensated promotions are disclosed. Applicable
-            privacy and anti-spam requirements are followed. Equity Alliance
+            privacy and anti-spam requirements are followed. Vizio Marketing
             does not guarantee share-price appreciation, trading volume,
             financing success, liquidity, or investment results. Our role is to
             help public companies communicate more effectively, reach relevant

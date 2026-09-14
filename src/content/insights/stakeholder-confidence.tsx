@@ -1,4 +1,4 @@
-export function StakeholderConfidenceContent() {
+﻿export function StakeholderConfidenceContent() {
   return (
     <>
       <p>Confidence is not built by sounding confident.</p>
@@ -183,7 +183,7 @@ export function StakeholderConfidenceContent() {
         communicates like adults are in charge.
       </p>
       <p>
-        For Equity Alliance, that is the point of professional investor
+        For Vizio Marketing, that is the point of professional investor
         awareness and strategic communication. Visibility matters, but visibility
         without credibility can backfire. The goal is not louder communication.
         It is communication that makes the company easier to understand, easier

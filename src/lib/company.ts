@@ -1,4 +1,5 @@
 export const COMPANY = {
+  name: "Vizio Marketing",
   establishedYear: 2018,
   yearsExperience: "8+",
   establishedLabel: "Established 2018",
@@ -9,6 +10,11 @@ export const COMPANY = {
   proofYearsLabel: "8+",
   proofYearsDescription:
     "Years around capital markets, investor relations, and growth campaigns",
-  phone: "+1 212 540 2727",
-  phoneHref: "tel:+12125402727",
+  phone: "+1(514)900-0022",
+  phoneHref: "tel:+15149000022",
+  email: "Info@viziomarketing.com",
+  emailHref: "mailto:Info@viziomarketing.com",
+  addressLine1: "101-4762 Samson Boulevard",
+  addressLine2: "Laval, Quebec H7W 2H7",
+  addressCountry: "Canada",
 } as const;

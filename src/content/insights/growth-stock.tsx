@@ -1,4 +1,4 @@
-export function GrowthStockContent() {
+﻿export function GrowthStockContent() {
   return (
     <>
       <p>
@@ -97,9 +97,9 @@ export function GrowthStockContent() {
         These outcomes can help create a stronger foundation for long-term
         market recognition.
       </p>
-      <h2>The Equity Alliance Difference</h2>
+      <h2>The Vizio Marketing Difference</h2>
       <p>
-        At Equity Alliance, we focus on helping growth companies bridge the gap
+        At Vizio Marketing, we focus on helping growth companies bridge the gap
         between execution and recognition.
       </p>
       <p>
@@ -118,7 +118,7 @@ export function GrowthStockContent() {
       </p>
       <p>But first, they must know your story exists.</p>
       <p>
-        <strong>Equity Alliance Investor Awareness</strong> helps growth
+        <strong>Vizio Marketing Investor Awareness</strong> helps growth
         companies increase visibility, credibility, and investor engagement.
       </p>
       <p>The next great growth story starts with being discovered.</p>

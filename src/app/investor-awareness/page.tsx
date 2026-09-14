@@ -1,15 +1,15 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import SiteShell from "@/components/SiteShell";
 import CampaignMarketingSections from "@/components/investor-awareness/CampaignMarketingSections";
 import { COMPANY } from "@/lib/company";
 
 export const metadata: Metadata = {
-  title: "Investor Awareness & Capital Markets Marketing — Equity Alliance",
+  title: "Investor Awareness & Capital Markets Marketing — Vizio Marketing",
   description:
     "Multi-platform investor awareness campaigns for public companies: Facebook, Instagram, email marketing, financial influencers, retargeting, analytics, and ongoing campaign management.",
   openGraph: {
-    title: "Investor Awareness AI™ — Equity Alliance",
+    title: "Investor Awareness AI™ — Vizio Marketing",
     description:
       "Helping public companies get discovered, understood, and followed by investors. AI visibility, targeted traffic, investor storytelling, and measurable engagement.",
     url: "https://equityalliancevc.com/investor-awareness",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Investor Awareness AI™ — Equity Alliance",
+    title: "Investor Awareness AI™ — Vizio Marketing",
     description:
       "Helping public companies get discovered, understood, and followed by investors. AI visibility, targeted traffic, investor storytelling, and measurable engagement.",
     images: ["/assets/market-data.webp"],
@@ -39,7 +39,7 @@ export default function InvestorAwarenessPage() {
               have a management problem. They have a visibility problem.
             </p>
             <p className="reveal delay-2" style={{ marginTop: 16 }}>
-              Equity Alliance helps NASDAQ, NYSE, OTCQX, and OTCQB companies
+              Vizio Marketing helps NASDAQ, NYSE, OTCQX, and OTCQB companies
               increase investor awareness, strengthen market positioning, and
               attract attention from retail and institutional investors, family
               offices, wealth managers, analysts, financial media, and other
@@ -94,7 +94,7 @@ export default function InvestorAwarenessPage() {
               <h2>Visibility, not capability.</h2>
             </div>
             <p className="lead">
-              {COMPANY.foundedLabel}, Equity Alliance works directly with
+              {COMPANY.foundedLabel}, Vizio Marketing works directly with
               public-company CEOs and management teams to develop tailored
               investor awareness campaigns based on each company&apos;s goals,
               story, market position, timing, and budget.
@@ -295,7 +295,7 @@ export default function InvestorAwarenessPage() {
             <div className="kicker">Targeted traffic</div>
             <h2>Targeted traffic to your ticker and story.</h2>
             <p className="lead">
-              Equity Alliance helps drive targeted investor traffic through
+              Vizio Marketing helps drive targeted investor traffic through
               Google Ads, display networks, financial media, LinkedIn, sponsored
               content, and ticker-symbol campaigns.
             </p>
@@ -428,7 +428,7 @@ export default function InvestorAwarenessPage() {
               <h2>Custom campaigns based on goals and budget.</h2>
             </div>
             <p className="lead">
-              Every public company is different. Equity Alliance works directly
+              Every public company is different. Vizio Marketing works directly
               with management to understand your objectives and develop a
               practical campaign that fits your goals, timing, and budget.
             </p>
@@ -453,7 +453,7 @@ export default function InvestorAwarenessPage() {
             </div>
             <h2 style={{ color: "#fff" }}>Not sure where to begin?</h2>
             <p style={{ color: "rgba(255,255,255,.80)", lineHeight: 1.7 }}>
-              For companies unsure where to start, Equity Alliance offers a
+              For companies unsure where to start, Vizio Marketing offers a
               Visibility Assessment, a clear roadmap for improving investor
               awareness and market visibility. The assessment may review:
             </p>
@@ -472,7 +472,7 @@ export default function InvestorAwarenessPage() {
             </ul>
           </article>
           <article className="quote-card">
-            <div className="kicker">Why Equity Alliance</div>
+            <div className="kicker">Why Vizio Marketing</div>
             <p className="positioning-line">
               Visibility without strategy is wasted spend.
             </p>
@@ -515,7 +515,7 @@ export default function InvestorAwarenessPage() {
             <div>
               <h2>Request a Customized Proposal</h2>
               <p>
-                Contact Equity Alliance to request a customized investor
+                Contact Vizio Marketing to request a customized investor
                 awareness proposal covering Facebook and Instagram campaigns,
                 financial influencer promotion, qualified investor email
                 marketing, financial publisher exposure, press-release

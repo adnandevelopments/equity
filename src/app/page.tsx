@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import SiteShell from "@/components/SiteShell";
 import { COMPANY } from "@/lib/company";
 
@@ -13,8 +13,8 @@ export default function Home() {
             </div>
             <h1 className="reveal delay-1">{COMPANY.heroHeadline}</h1>
             <p className="reveal delay-2">
-              Capital markets expertise. AI-powered investor growth. Equity
-              Alliance helps OTCQB, OTCQX, Nasdaq, and growth-stage public
+              Capital markets expertise. AI-powered investor growth. Vizio
+              Marketing helps OTCQB, OTCQX, Nasdaq, and growth-stage public
               companies increase market awareness, attract investors, improve
               shareholder engagement, and access capital.
             </p>
@@ -38,7 +38,7 @@ export default function Home() {
           </div>
           <aside
             className="hero-showcase reveal delay-2"
-            aria-label="Equity Alliance investor relations visual"
+            aria-label="Vizio Marketing investor relations visual"
           >
             <figure className="hero-photo">
               <img
@@ -80,7 +80,7 @@ export default function Home() {
             </div>
             <p className="lead">
               Most public companies face the same challenge: the market does not
-              fully understand their story. {COMPANY.sinceYearLabel}, Equity Alliance has
+              fully understand their story. {COMPANY.sinceYearLabel}, Vizio Marketing has
               helped companies increase visibility, communicate their
               investment thesis, attract investors, and access capital.
             </p>
@@ -243,7 +243,7 @@ export default function Home() {
         <div className="wrap focus-grid">
           <article className="focus-card">
             <div className="kicker" style={{ color: "#85e9ff" }}>
-              Why Equity Alliance
+              Why Vizio Marketing
             </div>
             <h2 style={{ color: "#fff" }}>
               From untold story to market awareness.
@@ -272,7 +272,7 @@ export default function Home() {
                 marginTop: 22,
               }}
             >
-              Equity Alliance works with leadership teams to sharpen the
+              Vizio Marketing works with leadership teams to sharpen the
               message, build awareness, and connect company stories with
               investor and stakeholder audiences.
             </p>
@@ -343,7 +343,7 @@ export default function Home() {
                 <Link href="/insights">View all insights →</Link>
               </h3>
               <p>
-                Read Equity Alliance perspectives on visibility, investor
+                Read Vizio Marketing perspectives on visibility, investor
                 awareness, and market recognition.
               </p>
             </article>
@@ -357,14 +357,14 @@ export default function Home() {
             <div>
               <h2>Ready for more investors to understand your story?</h2>
               <p>
-                Equity Alliance works with companies that have something real to
+                Vizio Marketing works with companies that have something real to
                 say and need the right strategy, campaign, and communication to
                 get it in front of the market.
               </p>
             </div>
             <div style={{ textAlign: "right" }}>
               <Link className="btn" href="/contact">
-                Contact Equity Alliance →
+                Contact Vizio Marketing →
               </Link>
             </div>
           </div>

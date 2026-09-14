@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
@@ -86,7 +86,7 @@ export default function NewsletterPopout({
       >
         ×
       </button>
-      <div className="kicker">Equity Alliance insights</div>
+      <div className="kicker">Vizio Marketing insights</div>
       <h2>Stay close to investor awareness updates.</h2>
       <p>
         Occasional notes on market visibility, investor communication, and

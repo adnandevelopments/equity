@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useCallback, useEffect, useRef } from "react";
 import Link from "next/link";
@@ -74,12 +74,12 @@ export default function Nav({ onNewsletterOpen }: NavProps) {
   return (
     <nav className="nav" ref={navRef}>
       <div className="wrap nav-inner">
-        <Link className="brand" href="/" aria-label="Equity Alliance home">
-          <img src="/assets/equity-alliance-logo.png" alt="Equity Alliance logo" />
+        <Link className="brand" href="/" aria-label="Vizio Marketing home">
+          <img src="/assets/vizio-marketing-logo.svg" alt="Vizio Marketing logo" />
           <span>
-            Equity
+            Vizio
             <br />
-            Alliance
+            Marketing
           </span>
         </Link>
         <button

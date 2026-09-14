@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 
@@ -11,14 +11,14 @@ const geist = Geist({
 export const metadata: Metadata = {
   metadataBase: new URL("https://equityalliancevc.com"),
   title:
-    "Equity Alliance — Capital Markets Expertise & AI-Powered Investor Growth",
+    "Vizio Marketing — Capital Markets Expertise & AI-Powered Investor Growth",
   description:
     "Capital markets expertise, AI-powered investor acquisition, investor awareness, and shareholder communications for OTCQB, OTCQX, Nasdaq, and growth-stage public companies.",
   openGraph: {
     type: "website",
-    siteName: "Equity Alliance",
+    siteName: "Vizio Marketing",
     title:
-      "Equity Alliance — Capital Markets Expertise & AI-Powered Investor Growth",
+      "Vizio Marketing — Capital Markets Expertise & AI-Powered Investor Growth",
     description:
       "Capital markets expertise, AI-powered investor acquisition, investor awareness, and shareholder communications for OTCQB, OTCQX, Nasdaq, and growth-stage public companies.",
     url: "https://equityalliancevc.com/",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Equity Alliance — Capital Markets Expertise & AI-Powered Investor Growth",
+      "Vizio Marketing — Capital Markets Expertise & AI-Powered Investor Growth",
     description:
       "Capital markets expertise, AI-powered investor acquisition, investor awareness, and shareholder communications for OTCQB, OTCQX, Nasdaq, and growth-stage public companies.",
     images: ["/assets/investor-meeting.webp"],

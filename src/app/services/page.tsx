@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import SiteShell from "@/components/SiteShell";
 
 export const metadata: Metadata = {
-  title: "Investor Awareness & Growth Services — Equity Alliance",
+  title: "Investor Awareness & Growth Services — Vizio Marketing",
   description:
     "Investor awareness campaigns, investor relations strategy, corporate storytelling, digital visibility, and business development for public and growth companies.",
   openGraph: {
-    title: "Investor Awareness & Growth Services — Equity Alliance",
+    title: "Investor Awareness & Growth Services — Vizio Marketing",
     description:
       "Investor awareness campaigns, investor relations strategy, corporate storytelling, digital visibility, and business development for public and growth companies.",
     url: "https://equityalliancevc.com/services",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Investor Awareness & Growth Services — Equity Alliance",
+    title: "Investor Awareness & Growth Services — Vizio Marketing",
     description:
       "Investor awareness campaigns, investor relations strategy, corporate storytelling, digital visibility, and business development for public and growth companies.",
     images: ["/assets/boardroom.jpg"],
@@ -180,7 +180,7 @@ export default function ServicesPage() {
                 <li>Investor conference and roadshow support</li>
                 <li>Capital access planning</li>
               </ul>
-              <h3>AI Market Intelligence</h3>
+              <h3 style={{ marginTop: 32 }}>AI Market Intelligence</h3>
               <p>
                 Market intelligence to help companies monitor opportunities,
                 sentiment, competitors, shareholders, and capital markets

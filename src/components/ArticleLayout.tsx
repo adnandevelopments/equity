@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import SiteShell from "./SiteShell";
 
 export type RelatedArticle = {
@@ -51,7 +51,7 @@ export default function ArticleLayout({
               <div className="kicker">Investor Awareness</div>
               <h3>Need more investors to understand the story?</h3>
               <p>
-                Equity Alliance helps public and growth companies sharpen their
+                Vizio Marketing helps public and growth companies sharpen their
                 message, build visibility, and create investor engagement.
               </p>
               <Link className="btn primary" href="/contact">

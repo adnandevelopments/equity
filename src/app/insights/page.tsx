@@ -1,24 +1,24 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 import SiteShell from "@/components/SiteShell";
 import { insightArticles } from "@/lib/insights";
 
 export const metadata: Metadata = {
-  title: "Insights — Equity Alliance",
+  title: "Insights — Vizio Marketing",
   description:
-    "Investor awareness, market visibility, and growth communication insights from Equity Alliance.",
+    "Investor awareness, market visibility, and growth communication insights from Vizio Marketing.",
   openGraph: {
-    title: "Insights — Equity Alliance",
+    title: "Insights — Vizio Marketing",
     description:
-      "Investor awareness, market visibility, and growth communication insights from Equity Alliance.",
+      "Investor awareness, market visibility, and growth communication insights from Vizio Marketing.",
     url: "https://equityalliancevc.com/insights/",
     images: ["/assets/market-data.webp"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Insights — Equity Alliance",
+    title: "Insights — Vizio Marketing",
     description:
-      "Investor awareness, market visibility, and growth communication insights from Equity Alliance.",
+      "Investor awareness, market visibility, and growth communication insights from Vizio Marketing.",
     images: ["/assets/market-data.webp"],
   },
 };
@@ -40,7 +40,7 @@ export default function InsightsPage() {
           <h1 className="reveal delay-1">Investor awareness perspectives.</h1>
           <p className="reveal delay-2">
             Market visibility, investor communication, and growth-company
-            storytelling from Equity Alliance.
+            storytelling from Vizio Marketing.
           </p>
         </div>
       </header>
