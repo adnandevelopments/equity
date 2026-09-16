@@ -6,9 +6,9 @@ import {
 import {
   clampField,
   isSpamSubmission,
-  isValidEmail,
   normalizeEmail,
 } from "@/lib/formSpam";
+import { isValidEmailFormat } from "@/lib/formValidation";
 import { contactTo, emailFrom, resendClient } from "@/lib/resendServer";
 
 type SubscribeBody = {
@@ -36,7 +36,7 @@ export async function POST(req: Request) {
   }
 
   const email = normalizeEmail(body.email ?? "");
-  if (!isValidEmail(email)) {
+  if (!isValidEmailFormat(email)) {
     return NextResponse.json(
       { error: "Valid email is required" },
       { status: 400 },
