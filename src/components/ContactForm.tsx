@@ -142,13 +142,27 @@ export default function ContactForm() {
           <input name="website" tabIndex={-1} autoComplete="off" />
         </label>
       </div>
-      <button className="btn primary" type="submit" disabled={submitting}>
-        {submitting ? "Sending…" : "Send Enquiry →"}
+      <button
+        className={`btn primary${submitting ? " is-loading" : ""}${submitted ? " is-success" : ""}`}
+        type="submit"
+        disabled={submitting}
+        aria-busy={submitting}
+      >
+        {submitting ? (
+          <>
+            <span className="btn-spinner" aria-hidden="true" />
+            Sending…
+          </>
+        ) : submitted ? (
+          "Enquiry sent ✓"
+        ) : (
+          "Send Enquiry →"
+        )}
       </button>
       {submitted ? (
         <p className="form-status form-status-success" role="status">
-          Thanks — your enquiry is in our queue. We will follow up where there
-          is a relevant fit.
+          Thanks — your enquiry was sent to our team. We will follow up where
+          there is a relevant fit.
         </p>
       ) : null}
       {error ? (
