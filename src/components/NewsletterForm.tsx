@@ -83,8 +83,22 @@ export default function NewsletterForm({
             autoComplete="email"
           />
         </label>
-        <button type="submit" disabled={submitting}>
-          {submitting ? "Sending…" : buttonLabel}
+        <button
+          type="submit"
+          className={`${submitting ? "is-loading" : ""}${submitted ? " is-success" : ""}`.trim()}
+          disabled={submitting}
+          aria-busy={submitting}
+        >
+          {submitting ? (
+            <>
+              <span className="btn-spinner" aria-hidden="true" />
+              Sending…
+            </>
+          ) : submitted ? (
+            "Subscribed ✓"
+          ) : (
+            buttonLabel
+          )}
         </button>
       </form>
       {submitted ? (
