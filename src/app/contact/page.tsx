@@ -1,4 +1,5 @@
 ﻿import type { Metadata } from "next";
+import ContactForm from "@/components/ContactForm";
 import SiteShell from "@/components/SiteShell";
 import { COMPANY } from "@/lib/company";
 
@@ -71,108 +72,13 @@ export default function ContactPage() {
               {COMPANY.addressCountry}
             </p>
             <p className="notice">
-              Submissions are saved securely for follow-up. {COMPANY.name} does
-              not provide investment advice, brokerage services, or investment
-              recommendations.
+              Enquiries are sent securely to our team for follow-up.{" "}
+              {COMPANY.name} does not provide investment advice, brokerage
+              services, or investment recommendations.
             </p>
           </div>
 
-          <form
-            className="panel form"
-            method="post"
-            action="/contact-submit"
-            style={{ padding: 28 }}
-          >
-            <input type="hidden" name="contact_started_at" value="0" />
-            <div className="form-grid">
-              <div className="field">
-                <label htmlFor="name">Name *</label>
-                <input
-                  id="name"
-                  name="name"
-                  required
-                  maxLength={120}
-                  autoComplete="name"
-                />
-              </div>
-              <div className="field">
-                <label htmlFor="email">Email *</label>
-                <input
-                  id="email"
-                  type="email"
-                  name="email"
-                  required
-                  maxLength={160}
-                  autoComplete="email"
-                />
-              </div>
-            </div>
-            <div className="form-grid">
-              <div className="field">
-                <label htmlFor="company">Company</label>
-                <input
-                  id="company"
-                  name="company"
-                  maxLength={160}
-                  autoComplete="organization"
-                />
-              </div>
-              <div className="field">
-                <label htmlFor="phone">Phone</label>
-                <input
-                  id="phone"
-                  name="phone"
-                  maxLength={80}
-                  autoComplete="tel"
-                />
-              </div>
-            </div>
-            <div className="form-grid">
-              <div className="field">
-                <label htmlFor="service">Area of interest</label>
-                <select id="service" name="service" defaultValue="">
-                  <option value="">Select one</option>
-                  <option>Investor Relations Strategy</option>
-                  <option>Corporate Communications</option>
-                  <option>Capital Markets Advisory</option>
-                  <option>ESG & Sustainability Communications</option>
-                  <option>International Business Development</option>
-                  <option>General enquiry</option>
-                </select>
-              </div>
-              <div className="field">
-                <label htmlFor="sector">Sector</label>
-                <input
-                  id="sector"
-                  name="sector"
-                  maxLength={140}
-                  placeholder="e.g. sustainability, healthcare, technology"
-                />
-              </div>
-            </div>
-            <div className="field">
-              <label htmlFor="message">Message *</label>
-              <textarea
-                id="message"
-                name="message"
-                required
-                maxLength={3000}
-              />
-            </div>
-            <div className="hidden-field">
-              <label>
-                Leave this empty
-                <input name="website" tabIndex={-1} autoComplete="off" />
-              </label>
-            </div>
-            <button className="btn primary" type="submit">
-              Send Enquiry →
-            </button>
-            <p className="form-email">
-              Prefer email?{" "}
-              <a href={COMPANY.emailHref}>{COMPANY.email}</a>
-            </p>
-          </form>
+          <ContactForm />
         </div>
       </section>
     </SiteShell>

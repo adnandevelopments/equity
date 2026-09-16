@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
+import NewsletterForm from "@/components/NewsletterForm";
 
 type NewsletterPopoutProps = {
   open: boolean;
@@ -62,18 +63,6 @@ export default function NewsletterPopout({
     };
   }, [show]);
 
-  useEffect(() => {
-    document
-      .querySelectorAll(
-        'input[name="newsletter_started_at"], input[name="contact_started_at"]',
-      )
-      .forEach((input) => {
-        (input as HTMLInputElement).value = String(
-          Math.floor(Date.now() / 1000),
-        );
-      });
-  }, []);
-
   if (!visible) return null;
 
   return (
@@ -92,31 +81,13 @@ export default function NewsletterPopout({
         Occasional notes on market visibility, investor communication, and
         growth advisory.
       </p>
-      <form className="newsletter-form" method="post" action="/contact-submit">
-        <input type="hidden" name="form_type" value="newsletter" />
-        <input type="hidden" name="newsletter_source" value="popup" />
-        <input type="hidden" name="newsletter_started_at" value="0" />
-        <div className="hidden-field" aria-hidden="true">
-          <label>
-            Website
-            <input
-              name="newsletter_website"
-              tabIndex={-1}
-              autoComplete="off"
-            />
-          </label>
-        </div>
-        <label>
-          <span className="sr-only">Email address</span>
-          <input
-            type="email"
-            name="newsletter_email"
-            required
-            placeholder="Email address"
-          />
-        </label>
-        <button type="submit">Keep me updated</button>
-      </form>
+      <NewsletterForm
+        source="popup"
+        buttonLabel="Keep me updated"
+        onSuccess={() => {
+          window.setTimeout(hide, 1600);
+        }}
+      />
     </div>
   );
 }
