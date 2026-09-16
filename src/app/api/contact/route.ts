@@ -6,9 +6,9 @@ import {
   clampField,
   isNonEmptyString,
   isSpamSubmission,
-  isValidEmail,
   normalizeEmail,
 } from "@/lib/formSpam";
+import { isValidEmailFormat } from "@/lib/formValidation";
 import { contactTo, emailFrom, resendClient } from "@/lib/resendServer";
 
 type ContactBody = {
@@ -41,7 +41,7 @@ export async function POST(req: Request) {
   }
 
   const email = normalizeEmail(body.email ?? "");
-  if (!isValidEmail(email)) {
+  if (!isValidEmailFormat(email)) {
     return NextResponse.json(
       { error: "Valid email is required" },
       { status: 400 },
@@ -50,10 +50,10 @@ export async function POST(req: Request) {
 
   const name = clampField(body.name ?? "", 120);
   const message = clampField(body.message ?? "", 3000);
-  if (!isNonEmptyString(name)) {
+  if (!isNonEmptyString(name) || name.length < 2) {
     return NextResponse.json({ error: "Name is required" }, { status: 400 });
   }
-  if (!isNonEmptyString(message)) {
+  if (!isNonEmptyString(message) || message.length < 10) {
     return NextResponse.json(
       { error: "Message is required" },
       { status: 400 },

@@ -14,6 +14,15 @@ export const metadata: Metadata = {
     "Vizio Marketing — Capital Markets Expertise & AI-Powered Investor Growth",
   description:
     "Capital markets expertise, AI-powered investor acquisition, investor awareness, and shareholder communications for OTCQB, OTCQX, Nasdaq, and growth-stage public companies.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+  },
   openGraph: {
     type: "website",
     siteName: "Vizio Marketing",
