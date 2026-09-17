@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "Insights — Vizio Marketing",
     description:
       "Investor awareness, market visibility, and growth communication insights from Vizio Marketing.",
-    url: "https://equityalliancevc.com/insights/",
+    url: "https://viziomarketing.com/insights/",
     images: ["/assets/market-data.webp"],
   },
   twitter: {

@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       type: "article",
       title: article.metaTitle,
       description: article.metaDescription,
-      url: `https://equityalliancevc.com/insights/${article.slug}/`,
+      url: `https://viziomarketing.com/insights/${article.slug}/`,
       images: ["/assets/market-data.webp"],
     },
     twitter: {

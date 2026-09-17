@@ -9,7 +9,7 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://equityalliancevc.com"),
+  metadataBase: new URL("https://viziomarketing.com"),
   title:
     "Vizio Marketing — Capital Markets Expertise & AI-Powered Investor Growth",
   description:
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
       "Vizio Marketing — Capital Markets Expertise & AI-Powered Investor Growth",
     description:
       "Capital markets expertise, AI-powered investor acquisition, investor awareness, and shareholder communications for OTCQB, OTCQX, Nasdaq, and growth-stage public companies.",
-    url: "https://equityalliancevc.com/",
+    url: "https://viziomarketing.com/",
     images: ["/assets/investor-meeting.webp"],
   },
   twitter: {
