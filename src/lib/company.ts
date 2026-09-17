@@ -1,5 +1,6 @@
 export const COMPANY = {
   name: "Vizio Marketing",
+  siteUrl: "https://viziomarketing.com",
   establishedYear: 2018,
   yearsExperience: "8+",
   establishedLabel: "Established 2018",

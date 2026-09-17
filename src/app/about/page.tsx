@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "About Vizio Marketing",
     description:
       "Vizio Marketing provides investor awareness, marketing, business development, and investor relations support for OTCQB, OTCQX, Nasdaq, and growth-stage public companies.",
-    url: "https://equityalliancevc.com/about",
+    url: "https://viziomarketing.com/about",
     images: ["/assets/advisory-meeting.webp"],
   },
   twitter: {

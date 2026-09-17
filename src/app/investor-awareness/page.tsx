@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Investor Awareness AI™ — Vizio Marketing",
     description:
       "Helping public companies get discovered, understood, and followed by investors. AI visibility, targeted traffic, investor storytelling, and measurable engagement.",
-    url: "https://equityalliancevc.com/investor-awareness",
+    url: "https://viziomarketing.com/investor-awareness",
     images: ["/assets/market-data.webp"],
   },
   twitter: {

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Investor Awareness & Growth Services — Vizio Marketing",
     description:
       "Investor awareness campaigns, investor relations strategy, corporate storytelling, digital visibility, and business development for public and growth companies.",
-    url: "https://equityalliancevc.com/services",
+    url: "https://viziomarketing.com/services",
     images: ["/assets/boardroom.jpg"],
   },
   twitter: {

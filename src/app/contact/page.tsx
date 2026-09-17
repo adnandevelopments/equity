@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `Contact ${COMPANY.name}`,
     description: `Contact ${COMPANY.name} to discuss investor relations, strategic communications, and corporate advisory needs.`,
-    url: "https://equityalliancevc.com/contact",
+    url: "https://viziomarketing.com/contact",
     images: ["/assets/vizio-marketing-logo.png"],
   },
   twitter: {

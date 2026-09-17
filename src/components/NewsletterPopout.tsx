@@ -20,7 +20,7 @@ export default function NewsletterPopout({
     setVisible(false);
     onClose();
     localStorage.setItem(
-      "equity-newsletter-dismissed-until",
+      "vizio-newsletter-dismissed-until",
       String(Date.now() + 45 * 24 * 60 * 60 * 1000),
     );
   }, [onClose]);
@@ -28,7 +28,7 @@ export default function NewsletterPopout({
   const show = useCallback(
     (manual = false) => {
       const dismissed =
-        Number(localStorage.getItem("equity-newsletter-dismissed-until") || 0) >
+        Number(localStorage.getItem("vizio-newsletter-dismissed-until") || 0) >
         Date.now();
       const isSmallScreen = window.matchMedia("(max-width: 980px)").matches;
       if (autoShown.current || (!manual && (dismissed || isSmallScreen))) return;
