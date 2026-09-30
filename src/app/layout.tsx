@@ -1,6 +1,12 @@
 ﻿import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import {
+  JsonLdScript,
+  getOrganizationJsonLd,
+  getProfessionalServiceJsonLd,
+  getWebsiteJsonLd,
+} from "@/components/JsonLdScript";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -52,6 +58,9 @@ export default function RootLayout({
     <html lang="en" className={geist.variable}>
       <head>
         <link rel="stylesheet" href="/assets/site.css" />
+        <JsonLdScript data={getOrganizationJsonLd()} />
+        <JsonLdScript data={getWebsiteJsonLd()} />
+        <JsonLdScript data={getProfessionalServiceJsonLd()} />
       </head>
       <body>{children}</body>
     </html>
