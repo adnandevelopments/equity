@@ -1,6 +1,7 @@
 ﻿import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import {
   JsonLdScript,
   getOrganizationJsonLd,
@@ -62,7 +63,10 @@ export default function RootLayout({
         <JsonLdScript data={getWebsiteJsonLd()} />
         <JsonLdScript data={getProfessionalServiceJsonLd()} />
       </head>
-      <body>{children}</body>
+      <body>
+        <GoogleAnalytics />
+        {children}
+      </body>
     </html>
   );
 }
