@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { COMPANY } from "@/lib/company";
 import { insightArticles } from "@/lib/insights";
+import { useCases } from "@/lib/useCases";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -36,6 +37,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${COMPANY.siteUrl}/use-cases`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: `${COMPANY.siteUrl}/contact`,
       lastModified: now,
       changeFrequency: "monthly",
@@ -56,5 +63,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticPages, ...insightPages];
+  const useCasePages: MetadataRoute.Sitemap = useCases.map((item) => ({
+    url: `${COMPANY.siteUrl}/use-cases/${item.slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.75,
+  }));
+
+  return [...staticPages, ...insightPages, ...useCasePages];
 }

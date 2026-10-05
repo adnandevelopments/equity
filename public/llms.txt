@@ -27,7 +27,8 @@ Primarily OTCQB, OTCQX, Nasdaq small-cap, and growth-stage public companies seek
 - [FAQ](https://viziomarketing.com/faq): Common questions about Vizio Marketing
 - [Services](https://viziomarketing.com/services): Full service categories
 - [Investor Awareness](https://viziomarketing.com/investor-awareness): Detailed campaign capabilities
-- [Insights](https://viziomarketing.com/insights): Articles on investor awareness and IR
+- [Insights](https://viziomarketing.com/insights): Articles and blog posts on investor awareness, OTCQB, Nasdaq, email, and AI search
+- [Use Cases](https://viziomarketing.com/use-cases): Illustrative investor awareness scenarios (not performance guarantees)
 - [Contact](https://viziomarketing.com/contact): Consultation form and contact details
 - [Sitemap](https://viziomarketing.com/sitemap.xml): Machine-readable site map
 

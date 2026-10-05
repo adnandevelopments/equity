@@ -110,6 +110,9 @@ export default function Nav({ onNewsletterOpen }: NavProps) {
           <Link href="/insights" onClick={closeMenu}>
             Insights
           </Link>
+          <Link href="/use-cases" onClick={closeMenu}>
+            Use Cases
+          </Link>
           <Link href="/contact#contact-form" onClick={handleContactClick}>
             Contact
           </Link>

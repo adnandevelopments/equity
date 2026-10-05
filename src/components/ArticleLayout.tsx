@@ -11,7 +11,10 @@ type ArticleLayoutProps = {
   tag: string;
   title: string;
   description: string;
-  date: string;
+  date?: string;
+  backHref?: string;
+  backLabel?: string;
+  relatedBasePath?: string;
   related: RelatedArticle[];
   children: React.ReactNode;
 };
@@ -21,6 +24,9 @@ export default function ArticleLayout({
   title,
   description,
   date,
+  backHref = "/insights",
+  backLabel = "Insights",
+  relatedBasePath = "/insights",
   related,
   children,
 }: ArticleLayoutProps) {
@@ -29,15 +35,17 @@ export default function ArticleLayout({
       <article className="article-shell">
         <header className="article-hero">
           <div className="wrap">
-            <Link className="article-back" href="/insights">
-              ← Insights
+            <Link className="article-back" href={backHref}>
+              ← {backLabel}
             </Link>
             <div className="eyebrow reveal">{tag}</div>
             <h1 className="reveal delay-1">{title}</h1>
             <p className="reveal delay-2">{description}</p>
-            <div className="article-meta reveal delay-3">
-              <span>{date}</span>
-            </div>
+            {date ? (
+              <div className="article-meta reveal delay-3">
+                <span>{date}</span>
+              </div>
+            ) : null}
           </div>
         </header>
 
@@ -65,7 +73,7 @@ export default function ArticleLayout({
                 <Link
                   key={item.slug}
                   className="article-next-card"
-                  href={`/insights/${item.slug}`}
+                  href={`${relatedBasePath}/${item.slug}`}
                 >
                   <span>{item.tag}</span>
                   <strong>{item.title}</strong>
